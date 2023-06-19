@@ -9,7 +9,9 @@
     'depends': ['base'],
     "application": True,  # This line says the module is an App, and not a module
     "data": [
-
+        "security/ir.model.access.csv",
+        "views/rumah_views.xml",
+        "views/flitzyblue_menu.xml"
     ],
     "installable": True,
 }
