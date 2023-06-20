@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<odoo>
-    <!-- Top menu item -->
-    <menuitem id="flitzyblue_menu_root" name="FlitzyBlue">
-        <menuitem id="test_first_level_menu" name="First Level">
-            <menuitem id="rumah_menu_action" action="rumah_action"/>
-        </menuitem>
-    </menuitem>
-</odoo>

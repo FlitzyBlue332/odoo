@@ -1,0 +1,25 @@
+<odoo>
+    <data>
+        <record id="invoice_export_form_view" model="ir.ui.view">
+            <field name="name">invoice.export.form</field>
+            <field name="model">invoice.export</field>
+            <field name="arch" type="xml">
+                <form string="Invoice Export">
+                    <footer>
+                        <button name="export_invoice_data_button" string="Export Invoice Data" type="object"
+                                class="oe_highlight"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+        <record id="invoice_export_action" model="ir.actions.act_window">
+            <field name="name">Invoice Export</field>
+            <field name="res_model">invoice.export</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+        </record>
+        <menuitem id="menu_invoice_export" name="Export Invoices" sequence="10"/>
+        <menuitem id="menu_invoice_export_sub" name="Export Invoice Data" parent="menu_invoice_export"
+                  action="invoice_export_action" groups="base.group_user"/>
+    </data>
+</odoo>
